@@ -1,0 +1,19 @@
+{
+  "name": "latex-ocaml-syntax",
+  "displayName": "LaTeX Embedded OCaml Syntax",
+  "description": "TextMate grammar injection for OCaml code blocks embedded in LaTeX documents.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "publisher": "local",
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "latex.ocaml.injection",
+        "injectTo": ["text.tex.latex"],
+        "path": "./grammars/latex-ocaml.json"
+      }
+    ]
+  }
+}

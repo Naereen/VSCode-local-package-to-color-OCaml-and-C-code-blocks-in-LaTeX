@@ -1,0 +1,54 @@
+{
+  "scopeName": "latex.ocaml.injection",
+  "injectionSelector": "L:text.tex.latex",
+  "patterns": [
+    {
+      "name": "markup.raw.block.ocaml.latex",
+      "begin": "(\\\\begin)\\{ocaml\\}",
+      "beginCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "end": "(\\\\end)\\{ocaml\\}",
+      "endCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "patterns": [
+        {
+          "include": "source.ocaml"
+        }
+      ]
+    },
+    {
+      "name": "markup.raw.block.mlinter.latex",
+      "begin": "(\\\\begin)\\{mlinter\\}",
+      "beginCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "end": "(\\\\end)\\{mlinter\\}",
+      "endCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "patterns": [
+        {
+          "include": "source.ocaml"
+        }
+      ]
+    },
+    {
+      "name": "markup.raw.block.c.latex",
+      "begin": "(\\\\begin)\\{clang\\}",
+      "beginCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "end": "(\\\\end)\\{clang\\}",
+      "endCaptures": {
+        "1": { "name": "support.function.general.tex" }
+      },
+      "patterns": [
+        {
+          "include": "source.c"
+        }
+      ]
+    }
+  ]
+}
